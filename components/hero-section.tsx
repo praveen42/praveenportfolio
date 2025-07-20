@@ -90,13 +90,15 @@ export function HeroSection() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-          <Button
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 opacity-0 animate-fade-in-up text-base font-medium"
-            style={{ animationDelay: "7s", animationFillMode: "forwards" }}
+          <a
+            href="/resume.pdf"
+            // download
+            target="_blank"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 opacity-0 animate-fade-in-up [animation-delay:7s] [animation-fill-mode:forwards] text-base font-medium inline-flex items-center"
           >
             <Download className="w-5 h-5 mr-2" />
             Download Resume
-          </Button>
+          </a>
           <div className="flex gap-4">
             <Button
               variant="outline"

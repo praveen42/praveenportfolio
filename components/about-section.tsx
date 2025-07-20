@@ -2,6 +2,8 @@ import { SectionWrapper } from "@/components/section-wrapper"
 import { Card, CardContent } from "@/components/ui/card"
 import { Server, Monitor, Cloud } from "lucide-react"
 
+// hello about
+
 export function AboutSection() {
   const highlights = [
     {
